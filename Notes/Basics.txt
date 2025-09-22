@@ -42,3 +42,7 @@ ex:
      generates all of the code for the basics
 
 +Working with texts
+-<p> is Paragraph
+-<h1> is a header
+    - you can do <hn>, n representing a number and it'll
+    create smaller and smaller headers

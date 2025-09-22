@@ -68,4 +68,35 @@ ex:
 *ordered list
 - same thing as list but instead of <ul> it's <ol>, it instead has numbers instead of dots
 
++Lists and images-----------------------------------------------------------------------------------
+- <a> to anchor elements we want to be links
+    ex:
+    <a href="https://www.theodinproject.com/about">About The Odin Project</a>
+    --href is the attribute
+    --only opens tab in the same page
+- opening a link in another tab
+    ex:
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+    --target is were it will go and set it to blank when you want it to default 
+    to a new tab, its value would be _self by default otherwise
+    --rel used to describe attribute about current page and linked document
+    noopener means current and target can't interact good for security
+    --noreferrer prevents new page to know where user came from
+
+-absolute link, refers to the full link / scheme and domain of a destination 
+usually contains same scheme, scheme://domain/path
+
+-relative links, links to other pages of our website usually not full link
+    ex:
+    <a href="about.html">About</a>
+    -- make sure they are in the same directory do / to go deeper based on index
+    ./ to make sure they start looking in your current directory
+
+
+*images
+-use <img> no closing tag, use attribute src to tell the browser where the image is
+- to go to a parent directory use ../
+- use alt to describe image, alt="The Odin Project Logo"
+- image size attributes are height and width
+
 

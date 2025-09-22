@@ -1,0 +1,44 @@
+Html - Builder
+CSS - Artist
+Js - wizard
+All 3 are front end dev
+
++Html
+Basically use <> as a delimeter to encapsulate elements
+<!DOCTYPE html> -- specifies version
+<html>
+-code here
+</html>
+  ^--> the / means the end of an element
+
+*Paragraph
+<p>some text content</p>
+
+-void elements have no closing tag
+-->img, and br
+
+*Attributes
+<html lang="en">
+        ^--> specifies the languaged used in that element
+
+*Head element, contains important meta info for webpages so no element about displays inside important
+ex:
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> - should always have head enclosing it
+    <title>My First Webpage</title> -- gives webpage human readable title
+  </head>
+</html>
+
+-meta element charset is basically allowing the use of special characters
+-if title isn't there it'll defualt to the file name
+
+-body, it's were all the content is contained
+<body>
+--content here
+</body>
+
+^--> all of this is boiler plate so just use ! in the first line for vs code which
+     generates all of the code for the basics
+
++Working with texts

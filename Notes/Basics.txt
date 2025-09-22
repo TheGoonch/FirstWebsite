@@ -3,7 +3,7 @@ CSS - Artist
 Js - wizard
 All 3 are front end dev
 
-+Html
++Html---------------------------------------------------------------------------------------------
 Basically use <> as a delimeter to encapsulate elements
 <!DOCTYPE html> -- specifies version
 <html>
@@ -41,8 +41,31 @@ ex:
 ^--> all of this is boiler plate so just use ! in the first line for vs code which
      generates all of the code for the basics
 
-+Working with texts
++Working with texts---------------------------------------------------------------
 -<p> is Paragraph
 -<h1> is a header
-    - you can do <hn>, n representing a number and it'll
+    - you can do <h1> to h6 and it'll
     create smaller and smaller headers
+-<strong> makes characters bold
+    ex:
+    <body>
+        <strong>Lorem ipsum dolor</strong>
+    </body>
+-<em> makes characters italic, same format as strong
+-comments, do <!-- I am an html comment -->
+
++lists---------------------------------------------------------------------------
+*Unordered list
+- used for lists of items were being ordered doesn't matter, have a dot instead of num
+- Use <ul> for the list, <li> for the items
+    ex:
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+*ordered list
+- same thing as list but instead of <ul> it's <ol>, it instead has numbers instead of dots
+
+

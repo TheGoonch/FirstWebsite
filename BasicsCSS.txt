@@ -101,5 +101,5 @@ only the nested contents would be seperated
 - inline css
     ex:
     <body>
-    <div style="color: white; background-color: black;">...</div>
+        <div style="color: white; background-color: black;">...</div>
     </body>

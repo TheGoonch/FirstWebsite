@@ -1,0 +1,105 @@
++CSS-------------------------------------------------------------------------
+- Basic syntax
+    ex:
+    selector
+        ^
+    div.bold-text{
+        font-weight: 700;
+    }       ^          ^
+        Property      value
+
+-selectors refer to html elements that css applies to
+universal selector is *{}
+
+-class selector, classes can be given to html texts and they can be used by css
+it can also have multiple classes seperated by white space
+    ex:
+    <div class="alert-text">Please agree to our terms of service.</div>
+    .alert-text {
+        color: red;
+    }
+    -- white space is used to differentiate between classes so use - instead
+
+-ID selector, html elements can only have one ID and so there's a different selector for it
+    ex:<div id="title">My Awesome 90's Page</div>
+    #title {
+        background-color: red;
+    }
+    --IDs should be used sparingly
+
+- can have multiple selectors seperated by coma, but you can still declare them
+uniquely with their own different properties almost like their inheritance in java
+
+-chaining selectors, when we have multiple classes and we want to change a specific one
+we do .subsection.header, so only the element with both classes get changed, also
+works with ids, .subsection#preview
+    ex: 
+    <div>
+        <div class="subsection header">Latest Posts</div>
+        <p class="subsection preview">This is where a preview for a post might go.</p>
+        <p class="subsection" id="preview"> hey </d>
+    </div>
+
+    .subsection.header {
+        color: red;
+    }
+
+    .subsection#preview {
+        color: blue;
+    }
+
+-descendant combinator, when doing a selector and you have something like ancestor and inside is contents
+and then inside that is contents again, and you have a seperate contents in the bottom
+only the nested contents would be seperated
+
+    ex:
+    .subsection .contents {
+        color: blue;
+    }
+    --white space between them is what makes it a combinator
+
+*basic properties
+- color - hex, rgb, and hsl values
+- background-color hex, rgb, and hsl values
+    ex:
+    p {
+         color: #1100ff;
+    }
+
+    p {
+        color: rgb(100, 0, 127);
+    }
+
+- font-family, if white space use "" else nothing, font-family: "Times New Roman", serif;
+- font-size, font-size: 22px
+- font-weight affects boldness,font-weight: 700 or use bold
+- text-align, text-align: center
+- img, height:, width:, if height is auto it's going to be half of width
+
+*connecting html and css
+- external css
+    ex:
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+- internal css
+    ex:
+    <head>
+        <style>
+            div {
+            color: white;
+            background-color: black;
+            }
+
+            p {
+            color: red;
+            }
+        </style>
+    </head>
+
+- inline css
+    ex:
+    <body>
+    <div style="color: white; background-color: black;">...</div>
+    </body>

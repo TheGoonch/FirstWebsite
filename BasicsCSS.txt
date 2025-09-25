@@ -103,3 +103,20 @@ only the nested contents would be seperated
     <body>
         <div style="color: white; background-color: black;">...</div>
     </body>
+
++Cascade------------------------------------------------------------------
+
+*specificity
+- Id > More specific > less specific > type selector
+- if it's a tie between 2 ids one with a class or another selector would win 
+- combinators don't add to specificity
+
+*inheritance
+- If you have a rule that encompases text for example then you have a More
+specific selector, list for example, if text changes font and you don't set it
+in list it'll inheret that property.
+- Not every element can be inhereted, most commonly are typography based opens
+
+*Rule order 
+- If everything is equal then the rule that's the most recently declared
+takes precedence

@@ -120,3 +120,33 @@ in list it'll inheret that property.
 *Rule order 
 - If everything is equal then the rule that's the most recently declared
 takes precedence
+
++Inspecting HTML and CSS-------------------------------------------------------
+-Use F12 to inspect element
+*inspecting elements
+- You can hover over them in F12 menu to check them
+- You can also edit on style sheet on botton to check out how they look
+and then refresh to get rid of them
+
++Box Model-------------------------------------------------------------------------------
+- Everything in CSS is a Box
+- Padding = space between border of a box and the content of the box
+- Border = space between padding and margin
+- margin = the space between the borders of adjacent boxes
+    --> The bigger margin takes precedence, if box 1 is 20 ptx away from box 2
+        and box 2 is 21 ptx away from box 1 then both of them are going to be
+        21 ptx away from eachother
+
++Block and Inline----------------------------------------------------------------
+* difference
+- default style of elements are blocks, "display: block", each new element will appear
+in a new block, like boxes stacking on top of each other
+- Inlines appear beside elements, ex: "<a>" is a link tag
+    --> works diffently with padding than boxes
+
+*Inline-Block, inline elements but with block style padding and margin
+* div and spans, are elements that are used for just dividing elements
+"<div></div>"
+- spans are more for inline-level elements, used to group text content and inline
+HTML elements for styling, use only when no other semantic HTML elem is appropriate
+<span> class highlight>highlight me</span>

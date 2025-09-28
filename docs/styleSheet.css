@@ -14,3 +14,19 @@
     font-weight: bolder;
 }
 
+/*.flex-container {
+  /*display: flex; does things in a row*/ 
+/*} */
+
+.flex-container div {
+  background: rgb(244, 132, 4);
+  border: 4px solid rgb(11, 26, 239);
+  height: 50px;
+  margin: 20px;
+}
+
+.flex-container .one {
+    background: rgb(244, 4, 200); 
+}
+
+

@@ -1,0 +1,6 @@
++Intro to Flexbox---------------------------------
+- Standard way of placing elements
+- use flex as syntax, "display: flex;" in CSS will space out bloxs inside the class horizontally
+- and "flex: :" decides how the children of the flex class grow
+- flex item is anything inside a flex container, and if you have it's display set as a flex
+container then it's no longer an item

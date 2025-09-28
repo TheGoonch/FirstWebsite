@@ -14,19 +14,52 @@
     font-weight: bolder;
 }
 
-/*.flex-container {
-  /*display: flex; does things in a row*/ 
-/*} */
-
-.flex-container div {
+.main {
+  display: flex;
   background: rgb(244, 132, 4);
   border: 4px solid rgb(11, 26, 239);
-  height: 50px;
-  margin: 20px;
+  height: 800px;
+  padding: 100px;
+  align-items: center; 
+
 }
 
-.flex-container .one {
-    background: rgb(244, 4, 200); 
+.main div {
+  background: rgb(244, 232, 4);
+  border: 4px solid rgb(11, 26, 239);
+  height: 900px;
+  flex: 1;
 }
+
+.main .photoSection{
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 400px;
+  margin: 50px;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.photoSection div{
+  display: block;
+  background: rgb(4, 244, 228);
+  border: 4px solid rgb(235, 11, 239);
+  width: 350px;
+  margin: 25px;
+
+}
+
+.photoSection .photo{
+  flex: none;
+  height: 600px;
+}
+
+.photoSection .photoInfo{
+  flex: none;
+  height: 100px;
+}
+
 
 
